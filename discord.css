@@ -1,0 +1,599 @@
+body {
+    margin: 0 auto;
+}
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.discord {
+    display: flex;
+}
+
+.groups-icons__row {
+    display: flex;
+    background-color: #202225;
+    width: 72px;
+    height: 653px;
+}
+
+.groups-icons {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; 
+    border: 1px solid #202225;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.groups-icons:hover {
+    border: 1px solid #202225;
+    transition: all 0.10s linear 0.10s;
+    border-radius: 30%;
+}
+
+/* as transições são sim em 0.10s, porém a "untrasition"
+que é mais devagar que isso, ou igual */
+
+.groups-icons__discord {
+    margin-top: 10px;
+    left: 12px;
+    background-color: #36393f;
+}
+.groups-icons__discord:hover {
+    background: #7289da;
+    border: 1px solid #7289da;
+    transition: all 0.10s linear 0.10s;
+    border-radius: 30%;    
+}
+
+.groups-icons__img__discord {
+    width: 30px;
+    height: 22px;
+}
+
+.groups-icons__first-icon {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; 
+    border: 1px solid #202225;
+    margin-top: 18px;    
+}
+.groups-icons__first-icon:hover {
+    border: 1px solid #202225;
+    transition: all 0.10s linear 0.10s;
+    border-radius: 30%;
+}
+
+.groups-icons__plus-icon {
+    display: flex;
+    height: 16px;
+    width: 16px;
+    filter: invert(58%) sepia(73%) saturate(325%) hue-rotate(100deg) brightness(91%) contrast(90%);
+}
+.groups-icons__plus-icon:hover {
+    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(106deg) brightness(106%) contrast(101%);
+}
+
+.icon-plus {
+    align-items: center;
+    background-color: #36393f;
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.icon-plus:hover {
+    background-color: #43b581;
+}
+
+.debugging-list {
+    list-style-type: none;
+    width: 100%;
+}
+
+.channels {
+    display: flex;
+    background-color: #2f3136;
+    width: 240px;
+}
+
+.channels__group-name {
+    background-color: #2f3136;
+    position: fixed;
+    width: 240px;
+    height: 48px;
+    left: 72px;
+    top: 0;
+    border-bottom-style:solid;
+    border-color: #242529;
+    border-bottom-width: 1px;
+}
+.channels__group-name:hover {
+    background-color: rgba(79,84,92,0.16);
+    cursor: pointer;
+}
+
+.channels__group-name__name {
+    display: flex;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 550;
+    font-size: 16px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 16px;
+}
+
+.channels__group-name__arrow {
+    width: 12px;
+    height: 7px;
+}
+
+.text-channels__main {
+    margin-top: 48px;
+/*  overflow-y: scroll;
+    overflow-x: hidden; */
+}
+
+.text-channels__header {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0px 0px 0px;
+    height: 24px;
+    width: 214px;
+    color: #8E9297;
+    justify-content: center;
+    margin-left: 18px;
+}
+
+.text-channels__header-span {
+    font-size: 12px;
+}
+.text-channels__header-span:hover {
+    color:#fafafa;
+}
+
+.text-channels__fonts {
+    color: #8E9297;
+    font-size: 16px;
+    font-family: Helvetica;
+}
+
+.text-channels__boxes {
+    display: flex;
+    flex-direction: column;
+    height: 34px;
+    width: 224px;
+    border-radius: 5px;
+    background-color: #2f3136;
+    margin-left: 8px;
+    justify-content: center;
+}
+.text-channels__boxes:hover {
+    background-color: #393c43;
+}
+
+.text-channels__geral {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+}
+
+.text-channels__span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 224px;
+    height: 34px;
+}
+.text-channels__span:hover {
+    color: #fafafa;
+}
+
+.channels-footer {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    left: 72px;
+    bottom: 0px;
+    color: #FFFFFF;
+    background-color: #292b2f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 0px 8px;
+    margin-bottom: 1px;
+    width: 224px;
+    height: 52px;
+}
+
+.channels-footer__box-avatar {
+    display: flex;
+    margin-right: 8px;
+    width: 32px;
+    background-color: #292b2f;
+}
+
+.channels-footer__box-username {
+    display: flex;
+    margin-right: 4px;
+    height: 31px;
+    width: 84px;
+    background-color: 292b2f;
+    display: block;
+}
+
+.channels-footer__username {
+    height: 18px;
+    width: 84px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.channels-footer__usernumber{
+    color: #b9bbbe;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.channels-footer__box-icons {
+    display: flex;
+    height: 32px;
+    width: 96px;
+}
+
+.channels-footer__mic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    border: solid 1px;
+    border-radius: 5px;
+    border-color: #292b2f;
+    background-color: #292b2f;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.channels-footer__mic:hover {
+    background-color: #393c43;
+    border-radius: 5px;
+}
+
+.mic__tooltip {
+    position: relative;
+    display: inline-block;
+}
+.mic__tooltip .mic__tooltip-text {
+    visibility: hidden;
+    width: 70px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    padding: 0px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -35px;
+}
+.mic__tooltip:hover .mic__tooltip-text {
+    visibility: visible;
+}
+
+.mic__icon {
+    width: 13px;
+    height: 19px;
+    padding: 3px 0px 0px;
+}
+
+.headphone__icon {
+    width: 19px;
+    height: 19px;
+    padding-top: 1px;
+}
+
+.config__icon {
+    width: 19px;
+    height: 19px;
+    filter: invert(83%) sepia(5%) saturate(144%) hue-rotate(177deg) brightness(92%) contrast(87%);
+    opacity: .9;
+    padding-top: 1px;
+}
+
+.channels-footer__headphone {
+    display: flex;
+    height: 32px;
+    width: 32px;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px;
+    border-radius: 5px;
+    border-color: #292b2f;
+    background-color: #292b2f;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.channels-footer__headphone:hover {
+    background-color: #393c43;
+    border-radius: 5px;
+}
+
+.hp__tooltip {
+    position: relative;
+    display: inline-block;
+}
+.hp__tooltip .hp__tooltip-text {
+    visibility: hidden;
+    width: 105px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    padding: 0px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -53px;
+}
+.hp__tooltip:hover .hp__tooltip-text {
+    visibility: visible;
+}
+
+.channels-footer__config {
+    display: flex;
+    height: 32px;
+    width: 32px;    
+    align-items: center;
+    justify-content: center;
+    border: solid 1px;
+    border-radius: 5px;
+    border-color: #292b2f;
+    background-color: #292b2f;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.channels-footer__config:hover {
+    background-color: #393c43;
+    border-radius: 5px;
+}
+
+.cfg__tooltip {
+    position: relative;
+    display: inline-block;
+}
+.cfg__tooltip .cfg__tooltip-text {
+    visibility: hidden;
+    
+    width: 90px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    padding: 0px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -22px;
+}
+.cfg__tooltip:hover .cfg__tooltip-text {
+    visibility: visible;   
+}
+
+.username__tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.username__tooltip .username__tooltip-text {
+    visibility: hidden;
+    width: 160px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    padding: 0px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -85px;
+}
+.username__tooltip:hover .username__tooltip-text {
+    visibility: visible;   
+}
+
+.footer__discord-logged {
+    height: 33px;
+    width: 33px;
+}
+.footer__discord-logged:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+/*
+.chat {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: #36393f;
+    width: 814px;
+    left: 312px;
+    top: 0px;
+    bottom: 0px;
+}
+
+.participants {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: #2f3136;
+    width: 240px;
+    left: 1126px;
+    top: 0px;
+    bottom: 0px;
+} */
+
+.upper-bar {
+    align-items: center;
+    background-color: #36393f;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    height: 48px;
+    width: 1038px;
+    padding: 0px 8px;
+    left: 312px;
+    border-bottom-style: solid;
+    border-color: #242529;
+    border-bottom-width: 1px;
+}
+
+.upper-bar__channel-container {
+    align-items: center;
+    display: flex;
+    height: 24px;;
+    width: 678px;
+}
+
+.upper-bar__channel-icon {
+    align-items: center; 
+    color: #8E9297;
+    display: flex;
+    font-family: helvetica;
+    font-size: 28px;
+    height: 24px;
+    margin-left: 8px;
+    margin-right: 8px;
+    justify-content: center;
+    text-align: center;
+    width: 24px;
+}
+
+.channel-icon__text {
+    position: relative;
+
+}
+
+.upper-bar__channel-name {
+    color: white;
+    font-family: Helvetica;
+    font-weight: 550;
+    font-size: 16px;
+}
+
+.upper-bar__toolbar {
+    align-items: center;
+    display: flex;
+    height: 24px;
+    width: 360px;
+    background-color: blue;
+}
+
+.tooltip-boxes {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.upper-bar__bell-svg {
+    fill: #b9bbbe;
+    height: 24px;
+    width: 24px;
+}
+.upper-bar__bell-svg:hover {
+    fill: #dcddde;
+}
+
+.upper-bar__tack-svg {
+    fill: #b9bbbe;
+    height: 20px;
+    width: 20px;
+}
+.upper-bar__tack-svg:hover {
+    fill: #dcddde;
+}
+
+.upper-bar__members-icon {
+    fill: #ffffff;
+    height: 22px;
+    width: 22px;
+}
+.upper-bar__members-icon:hover {
+    fill: #b9bbbe;
+}
+
+.tooltip-search {
+    background-color: #202225;
+    border-radius: 4px;
+    color: #dcddde;
+    cursor: text;
+    display:flex;
+    margin: 0px 8px;
+    padding: 0px 2px;
+    height: 24px;
+    width: 140px;
+
+}
+
+.tooltip-search__typing {
+    background-color: #202225;
+    border: none;
+    color: #dcddde;
+    display: flex;
+    padding: 2px 0px;
+    padding-left: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    outline: none;
+    width: 100%;
+    height: 100;
+}
+/*.tooltip-search__typing:focus {
+    width: 240px;
+}*/
+
+.upper-bar__mailbox {
+    fill: #b9bbbe;
+}
+.upper-bar__mailbox:hover {
+    fill: #dcddde;   
+}
+
+.upper-bar__question-mark {
+    fill: #b9bbbe;
+    height: 20px;
+    width: 20px;
+}
+.upper-bar__question-mark:hover {
+    fill: #dcddde; 
+}
