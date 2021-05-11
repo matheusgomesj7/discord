@@ -285,7 +285,7 @@ que é mais devagar que isso, ou igual */
 .mic__tooltip .mic__tooltip-text {
     visibility: hidden;
     width: 70px;
-    background-color: black;
+    background-color: #18191c;
     color: #fff;
     text-align: center;
     border-radius: 3px;
@@ -345,7 +345,7 @@ que é mais devagar que isso, ou igual */
 .hp__tooltip .hp__tooltip-text {
     visibility: hidden;
     width: 105px;
-    background-color: black;
+    background-color: #18191c;
     color: #fff;
     text-align: center;
     border-radius: 3px;
@@ -386,7 +386,7 @@ que é mais devagar que isso, ou igual */
     visibility: hidden;
     
     width: 90px;
-    background-color: black;
+    background-color: #18191c;
     color: #fff;
     text-align: center;
     border-radius: 3px;
@@ -409,7 +409,7 @@ que é mais devagar que isso, ou igual */
 .username__tooltip .username__tooltip-text {
     visibility: hidden;
     width: 160px;
-    background-color: black;
+    background-color: #18191c;
     color: #fff;
     text-align: center;
     border-radius: 3px;
@@ -512,7 +512,7 @@ que é mais devagar que isso, ou igual */
     background-color: blue;
 }
 
-.tooltip-boxes {
+.toolbar-boxes {
     display: flex;
     align-items: center;
     height: 24px;
@@ -534,6 +534,28 @@ que é mais devagar que isso, ou igual */
     fill: #dcddde;
 }
 
+.bell__tooltip {
+    position: relative;
+    display: inline-block;
+}
+.bell__tooltip .bell__tooltip-text {
+    visibility: hidden;
+    width: 170px;
+    background-color: #18191c;
+    color: #fff;
+    text-align: left;
+    border-radius: 4px;
+    padding: 12px 12px 8px 12px;
+    position: absolute;
+    z-index: 3;
+    bottom: -430%;
+    left: -90%;
+    margin-left: -35px;
+}
+.bell__tooltip:hover .bell__tooltip-text {
+    visibility: visible;
+}
+
 .upper-bar__tack-svg {
     fill: #b9bbbe;
     height: 20px;
@@ -541,6 +563,28 @@ que é mais devagar que isso, ou igual */
 }
 .upper-bar__tack-svg:hover {
     fill: #dcddde;
+}
+
+.tack__tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tack__tooltip .tack__tooltip-text {
+    visibility: hidden;
+    width: 130px;
+    background-color: #18191c;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 8px 4px 8px 4px;
+    position: absolute;
+    z-index: 3;
+    bottom: -160%;
+    left: -35%;
+    margin-left: -35px;
+}
+.tack__tooltip:hover .tack__tooltip-text {
+    visibility: visible;
 }
 
 .upper-bar__members-icon {
@@ -552,7 +596,29 @@ que é mais devagar que isso, ou igual */
     fill: #b9bbbe;
 }
 
-.tooltip-search {
+.members__tooltip {
+    position: relative;
+    display: inline-block;
+}
+.members__tooltip .members__tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: #18191c;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 8px 4px 8px 4px;
+    position: absolute;
+    z-index: 3;
+    bottom: -160%;
+    left: -5%;
+    margin-left: -35px;
+}
+.members__tooltip:hover .members__tooltip-text {
+    visibility: visible;
+}
+
+.toolbar-search {
     background-color: #202225;
     border-radius: 4px;
     color: #dcddde;
@@ -565,7 +631,7 @@ que é mais devagar que isso, ou igual */
 
 }
 
-.tooltip-search__typing {
+.toolbar-search__typing {
     background-color: #202225;
     border: none;
     color: #dcddde;
@@ -578,7 +644,7 @@ que é mais devagar que isso, ou igual */
     width: 100%;
     height: 100;
 }
-/*.tooltip-search__typing:focus {
+/*.toolbar-search__typing:focus {
     width: 240px;
 }*/
 
@@ -589,6 +655,28 @@ que é mais devagar que isso, ou igual */
     fill: #dcddde;   
 }
 
+.mailbox__tooltip {
+    position: relative;
+    display: inline-block;
+}
+.mailbox__tooltip .mailbox__tooltip-text {
+    visibility: hidden;
+    width: 110px;
+    background-color: #18191c;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 8px 4px 8px 4px;
+    position: absolute;
+    z-index: 3;
+    bottom: -160%;
+    left: -10%;
+    margin-left: -35px;
+}
+.mailbox__tooltip:hover .mailbox__tooltip-text {
+    visibility: visible;
+}
+
 .upper-bar__question-mark {
     fill: #b9bbbe;
     height: 20px;
@@ -596,4 +684,26 @@ que é mais devagar que isso, ou igual */
 }
 .upper-bar__question-mark:hover {
     fill: #dcddde; 
+}
+
+.question-mark__tooltip {
+    position: relative;
+    display: inline-block;
+}
+.question-mark__tooltip .question-mark__tooltip-text {
+    visibility: hidden;
+    width: 50px;
+    background-color: #18191c;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 8px 4px 8px 4px;
+    position: absolute;
+    z-index: 3;
+    bottom: -160%;
+    left: 60%;
+    margin-left: -35px;
+}
+.question-mark__tooltip:hover .question-mark__tooltip-text {
+    visibility: visible;
 }
