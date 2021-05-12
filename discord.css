@@ -1,6 +1,6 @@
 body {
     margin: 0 auto;
-/*    overflow-x: hidden;
+    /*overflow-x: hidden;
     overflow-y: hidden;*/
 }
 
@@ -824,7 +824,7 @@ que é mais devagar que isso, ou igual */
 
 .gorick-text {
     display: flex;
-    
+
     width: 678px;
 }
 
@@ -1015,13 +1015,8 @@ que é mais devagar que isso, ou igual */
     width: 22px;
 }
 
-
-
 /*255x798*/
 
-
-
-/*
 .participants {
     display: flex;
     flex-direction: column;
@@ -1031,4 +1026,89 @@ que é mais devagar que isso, ou igual */
     left: 1126px;
     top: 0px;
     bottom: 0px;
-} */
+}
+
+.participants__header {
+    background-color: none;
+    color: #8e9297;
+    cursor: default;
+    font-size: 12px;
+    font-weight: 600;
+    height: 16px;
+    margin-top: 48px;
+    padding: 24px 8px 0 16px;
+    width: 208px;
+}
+
+.participants__header-offline {
+    background-color: none;
+    color: #8e9297;
+    cursor: default;
+    font-size: 12px;
+    font-weight: 600;
+    height: 16px;
+    padding: 24px 8px 0 16px;
+    width: 208px;
+}
+
+.participants-box {
+    height: 42px;
+    margin-left: 8px;
+    width: 224px;
+
+}
+
+.participants-interactive-box {
+    align-items: center;
+    background-color: none;
+    border-radius: 4px;
+    color: #8e9297;
+    cursor: pointer;
+    display: flex;
+    height: 42px;
+    padding: 0 8px;
+    width: 208px;
+}
+.participants-interactive-box:hover {
+    background-color: #34373c;
+    color: #dcddde;
+}
+
+.participants-interactive-box-mattler {
+    align-items: center;
+    background-color: none;
+    border-radius: 4px;
+    color: #8e9297;
+    cursor: pointer;
+    display: flex;
+    height: 42px;
+    padding: 0 8px;
+    width: 208px;
+    opacity: .3;
+}
+.participants-interactive-box-mattler:hover {
+    background-color: #34373c;
+    color: #dcddde;
+    opacity: .8;
+}
+
+.participants__gorick-icon {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+
+.participants-interactive-box__text {
+    background-color: none;
+    font-size: 16px;
+    font-weight: 400;
+    height: 18px;
+    margin-left: 12px;
+    width: 164px;
+}
+
+.participants__crown-icon {
+    margin-left: 1px;
+    height: 12px;
+    width: 12px;
+}
