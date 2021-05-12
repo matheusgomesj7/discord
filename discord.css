@@ -1,5 +1,7 @@
 body {
     margin: 0 auto;
+    /*overflow-x: hidden;
+    overflow-y: hidden;*/
 }
 
 :root {
@@ -289,7 +291,7 @@ que é mais devagar que isso, ou igual */
     color: #fff;
     text-align: center;
     border-radius: 3px;
-    padding: 0px 0;
+    padding: 4px 0;
     position: absolute;
     z-index: 1;
     bottom: 125%;
@@ -349,7 +351,7 @@ que é mais devagar que isso, ou igual */
     color: #fff;
     text-align: center;
     border-radius: 3px;
-    padding: 0px 0;
+    padding: 4px 0;
     position: absolute;
     z-index: 1;
     bottom: 125%;
@@ -384,17 +386,16 @@ que é mais devagar que isso, ou igual */
 }
 .cfg__tooltip .cfg__tooltip-text {
     visibility: hidden;
-    
-    width: 90px;
+    width: 170px;
     background-color: #18191c;
     color: #fff;
     text-align: center;
     border-radius: 3px;
-    padding: 0px 0;
+    padding: 4px 0;
     position: absolute;
     z-index: 1;
     bottom: 125%;
-    left: 50%;
+    left: -140%;
     margin-left: -22px;
 }
 .cfg__tooltip:hover .cfg__tooltip-text {
@@ -413,7 +414,7 @@ que é mais devagar que isso, ou igual */
     color: #fff;
     text-align: center;
     border-radius: 3px;
-    padding: 0px 0;
+    padding: 4px 0;
     position: absolute;
     z-index: 1;
     bottom: 125%;
@@ -433,28 +434,7 @@ que é mais devagar que isso, ou igual */
     cursor: pointer;
 }
 
-/*
-.chat {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    background-color: #36393f;
-    width: 814px;
-    left: 312px;
-    top: 0px;
-    bottom: 0px;
-}
 
-.participants {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    background-color: #2f3136;
-    width: 240px;
-    left: 1126px;
-    top: 0px;
-    bottom: 0px;
-} */
 
 .upper-bar {
     align-items: center;
@@ -509,7 +489,7 @@ que é mais devagar que isso, ou igual */
     display: flex;
     height: 24px;
     width: 360px;
-    background-color: blue;
+    background-color: #36393f;
 }
 
 .toolbar-boxes {
@@ -707,3 +687,249 @@ que é mais devagar que isso, ou igual */
 .question-mark__tooltip:hover .question-mark__tooltip-text {
     visibility: visible;
 }
+
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    background-color: #36393f;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    bottom: 0px;
+    width: 814px;
+    /*the scroll has 16px of width*/
+}
+
+
+.mattler__chat-1 {
+    background-color: #36393f;
+    display: flex;
+    margin-top: 48px;
+    height: 255px;
+    width: 798px;
+}
+.mattler__chat-1:hover {
+    background-color: #32353b;
+}
+
+
+.chat-icons__mattler {
+    margin-left: 18px;
+    margin-top: 4px;
+    height: 40px;
+    width: 40px;
+    opacity: .6;
+    cursor: pointer;
+}
+
+.mattler__chat-1-content {
+    background-color: none;
+    margin: 2px 48px 2px 14px;
+    height: 251px;
+    width: 678px;
+}
+
+.mattler__chat-header {
+    background-color: none;
+    display: flex;
+    align-items: center;
+    height: 22px;
+    width: 100%;
+}
+
+.chat__header-username {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+.chat__header-username:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.chat__header-date {
+    color: #72767d;
+    cursor: default;
+    font-size: 11px;
+    font-weight: 500;
+    margin-left: 8px;
+    padding: 3px 0px 0px 0px;
+}
+
+.chat__print {
+    cursor: pointer;
+    height: 225px;
+    width: 400px;
+}
+
+.chat__print-gorick {
+    cursor: pointer;
+    height: 225px;
+    width: 400px;
+}
+
+.chat-dividers {
+    display: flex;
+    color: #72767d;
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: 18px;
+    margin-bottom: 3px;
+    cursor: default;
+}
+
+.chat-divider {
+    width: 43%;
+    border: none;
+    border-top: 1px solid #72767d;
+    color: #72767d;
+    opacity: .3;
+}
+
+.gorick__chat {
+    background-color: #36393f;
+    display: flex;
+    height: 415px;
+    width: 798px;
+}
+.gorick__chat:hover {
+    background-color: #32353b;
+}
+
+.chat-icons__gorick {
+    border-radius: 50%;
+    margin-left: 18px;
+    margin-top: 4px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.gorick__chat-content {
+    background-color: none;
+    margin: 2px 48px 2px 14px;
+    height: 251px;
+    width: 678px;
+}
+
+.gorick__chat-header {
+    background-color: none;
+    display: flex;
+    align-items: center;
+    height: 22px;
+    width: 100%;
+}
+
+.gorick-text {
+    display: flex;
+    
+    width: 678px;
+}
+
+.gorick-mention {
+    color: #fff;
+    background-color: rgba(114,137,218,0.3);
+    border-radius: 3px;
+    padding: 1px 2px;
+}
+.gorick-mention:hover {
+    background-color: #7289da;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.gorick-link {
+    color: #00b0f4;
+    padding-left: 4px;
+}
+.gorick-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.gorick-link-box {
+    background-color: #2f3136;
+    border-left: 4px solid #1e2327;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    height: 336px;
+    margin-top: 4px;
+    justify-content: space-between;
+    padding: 8px 16px 16px 12px;
+    width: 400px;
+}
+
+.link-box-1 {
+    align-items: center;
+    color: #dcddde;
+    display: flex;
+    flex-grow: 1;
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 8px;
+}
+
+.link-box-2 {
+    align-items: center;
+    color: #00b0f4;
+    cursor: pointer;
+    display: flex;
+    flex-grow: 2;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.link-box-2:hover {
+    text-decoration: underline;
+}
+
+.link-box-3 {
+    align-items: center;
+    color: #dcddde;
+    display: flex;
+    flex-grow: 2;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 12px;
+}
+
+.link-box-4 {
+    align-items: center;
+    border-radius: 3px;
+    display: flex;
+    flex-grow: 10;
+    cursor: pointer;
+}
+
+.gorick__chat-2 {
+    background-color: #36393f;
+    color: #dcddde;
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 72px;
+    height: 22px;
+    width: 798px;
+}
+.gorick__chat-2:hover {
+    background-color: #32353b;
+}
+
+
+
+/*255x798*/
+
+
+
+/*
+.participants {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: #2f3136;
+    width: 240px;
+    left: 1126px;
+    top: 0px;
+    bottom: 0px;
+} */
